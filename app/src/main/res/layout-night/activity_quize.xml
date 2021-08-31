@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backround_ekran"
+    android:backgroundTint="@color/backround_ekran"
+    tools:context=".QuizeActivity">
+
+    <TextView
+        android:id="@+id/textViewdogru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="34dp"
+        android:text="Doğru:0"
+        android:textColor="#32A307"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewyanlis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="53dp"
+        android:text="Yanlış:0"
+        android:textColor="#B71C1C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewsoru"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewsoru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="1.Soru"
+        android:textColor="#311B92"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewbayrak"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewsoru"
+        app:srcCompat="@drawable/almanya" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="99dp"
+        android:text="fransa"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="52dp"
+        android:text="türkiye"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="52dp"
+        android:text="almanya"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonA" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="47dp"
+        android:text="belçika"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonC" />
+</androidx.constraintlayout.widget.ConstraintLayout>
